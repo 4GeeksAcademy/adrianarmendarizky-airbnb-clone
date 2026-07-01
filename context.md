@@ -124,3 +124,8 @@ Observed page structure (top to bottom)
 NOTE: Room detail does NOT reuse BottomNavBar — it's replaced by StickyBookingBar. The shared layout should treat the bottom nav as page-specific (Home/Catalog only), not global.
 
 NOTE: Per the rubric, a back button or breadcrumb returning to the Catalog page is **[REQUIRED]** here — the breadcrumb trail in ThingsToKnowSection above is visual fidelity, but a dedicated back-to-Catalog control needs to exist regardless of whether ThingsToKnowSection gets built.
+
+# Examples screenshots used for visual prompting
+![alt text](<visual prompting screenshots/Home.png>)
+![alt text](<visual prompting screenshots/Catalog.png>)
+![alt text](<visual prompting screenshots/Room Detail.png>)
