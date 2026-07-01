@@ -11,7 +11,7 @@ export const BookingCard = ({ pricePerNight }: BookingCardProps) => {
   const [guests, setGuests] = useState(1);
 
   return (
-    <section className="sticky bottom-4 rounded-2xl border border-slate-300 bg-white p-4 shadow-sm">
+    <section className="sticky bottom-4 rounded-2xl border border-slate-300 bg-white p-4 shadow-sm lg:top-24 lg:bottom-auto lg:p-5">
       <p className="text-lg font-semibold text-slate-900">${pricePerNight} / night</p>
       <div className="mt-3">
         <GuestCounter min={1} max={6} onChange={setGuests} />

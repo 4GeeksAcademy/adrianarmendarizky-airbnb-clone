@@ -22,13 +22,25 @@ export const PhotoGallery = ({ photos, title }: PhotoGalleryProps) => {
 
   return (
     <section className="space-y-3">
-      <Image
-        src={photos[photoIndex]}
-        alt={title}
-        width={1200}
-        height={800}
-        className="h-64 w-full rounded-2xl object-cover"
-      />
+      <div className="relative">
+        <Image
+          src={photos[photoIndex]}
+          alt={title}
+          width={1200}
+          height={800}
+          className="h-56 w-full rounded-2xl object-cover sm:h-64 md:h-72 lg:h-80"
+        />
+        <div className="absolute left-3 top-3 flex gap-2">
+          <button type="button" className="rounded-full bg-white/95 px-2.5 py-1 text-xs font-medium text-slate-800 sm:px-3">
+            ← Back
+          </button>
+          <button type="button" className="rounded-full bg-white/95 px-2 py-1 text-xs text-slate-800">↗</button>
+          <button type="button" className="rounded-full bg-white/95 px-2 py-1 text-xs text-slate-800">♡</button>
+        </div>
+        <span className="absolute bottom-3 right-3 rounded-full bg-slate-900/75 px-3 py-1 text-xs text-white">
+          {photoIndex + 1}/{total}
+        </span>
+      </div>
       <div className="flex items-center justify-between">
         <p className="text-sm text-slate-600">
           {photoIndex + 1}/{total}
